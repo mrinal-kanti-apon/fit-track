@@ -19,7 +19,7 @@ export function WorkoutImage({ src, alt, className = "", sizes, priority }: Prop
   if (failedSrc === src) {
     return (
       <div
-        className={`grid place-items-center bg-gradient-to-br from-base-300 to-base-200 text-lime/60 ${className}`}
+        className={`grid place-items-center bg-linear-to-br from-base-300 to-base-200 text-lime/60 ${className}`}
         role="img"
         aria-label={alt}
       >

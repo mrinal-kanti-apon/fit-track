@@ -46,7 +46,7 @@ export function Navbar() {
         <Logo />
 
         {/* Mobile: links sit on their own row; desktop: centered */}
-        <div className="order-3 col-span-2 flex justify-center md:order-none md:col-span-1">{links}</div>
+        <div className="order-3 col-span-2 flex justify-center md:order-0 md:col-span-1">{links}</div>
 
         <div className="flex items-center justify-end gap-4 text-xs">
           <Link

@@ -8,11 +8,11 @@ export function Hero() {
       {/* soft lime glow behind the banner */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -right-24 top-1/2 -z-10 size-[28rem] -translate-y-1/2 rounded-full bg-lime/10 blur-3xl"
+        className="pointer-events-none absolute -right-24 top-1/2 -z-10 size-112 -translate-y-1/2 rounded-full bg-lime/10 blur-3xl"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)] [background-size:22px_22px] [mask-image:linear-gradient(to_right,transparent,black_70%)]"
+        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)] bg-size-[22px_22px] mask-[linear-gradient(to_right,transparent,black_70%)]"
       />
 
       <div className="grid items-center gap-8 px-6 py-10 sm:px-10 md:grid-cols-[1.3fr_1fr] md:py-14 lg:grid-cols-[1.7fr_1fr] lg:px-14">
@@ -31,7 +31,7 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[17rem] sm:max-w-xs md:max-w-sm">
+        <div className="relative mx-auto w-full max-w-68 sm:max-w-xs md:max-w-sm">
           <Image
             src="/banner.png"
             alt="Anatomical model performing a preacher curl"

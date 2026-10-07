@@ -12,7 +12,7 @@ import { WorkoutImage } from "./WorkoutImage";
 export function DetailSkeleton() {
   return (
     <div className="grid gap-8 lg:grid-cols-2 lg:gap-12" role="status" aria-label="Loading workout">
-      <div className="skeleton aspect-[4/5] w-full rounded-2xl bg-base-300/60" />
+      <div className="skeleton aspect-4/5 w-full rounded-2xl bg-base-300/60" />
       <div className="space-y-4">
         <div className="skeleton h-10 w-3/4 bg-base-300/60" />
         <div className="skeleton h-4 w-full bg-base-300/60" />
@@ -66,7 +66,7 @@ export function WorkoutDetail({ id }: { id: string }) {
   return (
     <article className="grid gap-8 lg:grid-cols-2 lg:gap-12">
       <div className="lg:sticky lg:top-24 lg:self-start">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-card shadow-[0_30px_80px_-30px_rgba(204,255,0,0.18)]">
+        <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-line bg-card shadow-[0_30px_80px_-30px_rgba(204,255,0,0.18)]">
           <WorkoutImage
             src={w.image}
             alt={`${w.name} illustration`}

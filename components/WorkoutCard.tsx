@@ -18,7 +18,7 @@ export function WorkoutCard({ workout, index = 0 }: { workout: Workout; index?: 
         href={`/workouts/${workout.id}`}
         className="group block overflow-hidden rounded-2xl border border-line bg-card transition duration-300 hover:-translate-y-1 hover:border-lime/50 hover:shadow-[0_20px_50px_-20px_rgba(204,255,0,0.25)]"
       >
-        <div className="relative aspect-[16/9] overflow-hidden bg-base-200">
+        <div className="relative aspect-video overflow-hidden bg-base-200">
           <WorkoutImage
             src={workout.image}
             alt={`${workout.name} illustration`}
@@ -46,7 +46,7 @@ export function WorkoutCard({ workout, index = 0 }: { workout: Workout; index?: 
 export function CardSkeleton() {
   return (
     <li className="overflow-hidden rounded-2xl border border-line bg-card" aria-hidden>
-      <div className="skeleton aspect-[16/9] w-full rounded-none bg-base-300/60" />
+      <div className="skeleton aspect-video w-full rounded-none bg-base-300/60" />
       <div className="space-y-3 p-4">
         <div className="skeleton h-4 w-24 bg-base-300/60" />
         <div className="skeleton h-5 w-3/4 bg-base-300/60" />

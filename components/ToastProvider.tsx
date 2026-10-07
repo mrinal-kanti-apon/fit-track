@@ -38,7 +38,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     <ToastContext.Provider value={value}>
       {children}
       <div
-        className="toast toast-bottom toast-center z-[100] w-full max-w-sm px-4 sm:toast-end sm:w-auto sm:px-0"
+        className="toast toast-bottom toast-center z-100 w-full max-w-sm px-4 sm:toast-end sm:w-auto sm:px-0"
         role="status"
         aria-live="polite"
       >
